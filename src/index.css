@@ -94,3 +94,107 @@ img {
   display: block;
   max-width: 100%;
 }
+
+:root {
+  --baby-blue: #8fd9fb;
+  --light-blue: #a2e0fc;
+  --sky-blue: #87ceeb;
+  --powder-blue: #b0e0e6;
+  --alice-blue: #f0f8ff;
+  --input-width: 200px; /* Fixed width for inputs */
+  --input-height: 30px; /* Fixed height for inputs */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--alice-blue);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: var(--baby-blue);
+  margin-top: 20px;
+}
+
+/* Form Styles */
+form {
+  background-color: var(--powder-blue);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: var(--sky-blue);
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: var(--input-width);
+  height: var(--input-height);
+  padding: 5px;
+  margin-bottom: 12px;
+  border: 1px solid var(--light-blue);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  background-color: var(--baby-blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--light-blue);
+}
+
+/* Error Message Styles */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Contact List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: var(--powder-blue);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.delete {
+  background-color: var(--sky-blue);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.delete:hover {
+  background-color: var(--light-blue);
+}
