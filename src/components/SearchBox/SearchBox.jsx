@@ -5,6 +5,7 @@ const SearchBox = ({ value, onChange }) => {
     <div className={css.searchBox}>
       <label htmlFor="search">Find contacts by name</label>
       <input
+        className={css.searchInput}
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}

@@ -40,14 +40,14 @@ const ContactForm = ({ onAdd }) => {
     >
       <Form className={css.form}>
         <div className={css.fieldGroup}>
-          <label htmlFor="nameId">
+          <label htmlFor="nameId" className={css.formLabel}>
             Name
             <Field id={nameId} name="name" />
             <ErrorMessage name="name" component="div" className={css.error} />
           </label>
         </div>
         <div className={css.fieldGroup}>
-          <label htmlFor="numberId">
+          <label htmlFor="numberId" className={css.formLabel}>
             Number
             <Field id={numberId} name="number" />
             <ErrorMessage name="number" component="div" className={css.error} />
