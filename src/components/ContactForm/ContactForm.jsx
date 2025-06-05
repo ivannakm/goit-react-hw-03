@@ -34,20 +34,20 @@ const ContactForm = ({ onAdd }) => {
 
   return (
     <Formik
-      initialValues={{ initialValues }}
+      initialValues={initialValues}
       validationSchema={FeedbackSchema}
       onSubmit={handleSubmit}
     >
       <Form className={css.form}>
         <div className={css.fieldGroup}>
-          <label htmlFor="nameId" className={css.formLabel}>
+          <label htmlFor={nameId} className={css.formLabel}>
             Name
             <Field id={nameId} name="name" />
             <ErrorMessage name="name" component="div" className={css.error} />
           </label>
         </div>
         <div className={css.fieldGroup}>
-          <label htmlFor="numberId" className={css.formLabel}>
+          <label htmlFor={numberId} className={css.formLabel}>
             Number
             <Field id={numberId} name="number" />
             <ErrorMessage name="number" component="div" className={css.error} />
